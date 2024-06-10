@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import "./App.css";
 
-const socket = io("https://text-share-app-by-wittedtech.vercel.app/api"); // Adjust for the Vercel deployment
+const socket = io(
+  "https://text-sharing-app-by-wittedtech-wittedtechs-projects.vercel.app/api"
+); // Adjust for the Vercel deployment
 
 function App() {
   const [sessionId, setSessionId] = useState("");
